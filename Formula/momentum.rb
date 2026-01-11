@@ -5,21 +5,21 @@
 class Momentum < Formula
   desc "Lightweight CLI for managing Flux agents"
   homepage "https://github.com/sirsjg/momentum"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sirsjg/momentum/releases/download/v1.1.0/momentum_1.1.0_darwin_amd64.tar.gz"
-      sha256 "4958e65263ca06681b32cf72dd0a27f32e67c469235375168ddac85760f3e301"
+      url "https://github.com/sirsjg/momentum/releases/download/v1.1.1/momentum_1.1.1_darwin_amd64.tar.gz"
+      sha256 "16bab3f75fae190e491726e058730e83a107abc8127b183dd3794503b96f1213"
 
       def install
         bin.install "momentum"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sirsjg/momentum/releases/download/v1.1.0/momentum_1.1.0_darwin_arm64.tar.gz"
-      sha256 "4b5b853c6e36afd686ffa2621bcb0a8286bec23fc1061f39690d156c716ba094"
+      url "https://github.com/sirsjg/momentum/releases/download/v1.1.1/momentum_1.1.1_darwin_arm64.tar.gz"
+      sha256 "d98a977ad8bbca98f3a6247354ed4c4866ac4cd824da841968907c65371c5e4e"
 
       def install
         bin.install "momentum"
@@ -29,15 +29,15 @@ class Momentum < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirsjg/momentum/releases/download/v1.1.0/momentum_1.1.0_linux_amd64.tar.gz"
-      sha256 "a69d353e82b5ff047962ba088fe2cac38d1923db13003c24521a65d12ce33bd9"
+      url "https://github.com/sirsjg/momentum/releases/download/v1.1.1/momentum_1.1.1_linux_amd64.tar.gz"
+      sha256 "d43c525f1a2fce32b3765380aa8dc86c72536841f0083324257dd1a95cee51a0"
       def install
         bin.install "momentum"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sirsjg/momentum/releases/download/v1.1.0/momentum_1.1.0_linux_arm64.tar.gz"
-      sha256 "231c8da5319533e681ce20345df155c342c890f1a3639dc46fa3edfb5e06f82b"
+      url "https://github.com/sirsjg/momentum/releases/download/v1.1.1/momentum_1.1.1_linux_arm64.tar.gz"
+      sha256 "72c72638f5221ba3f318a6a86014131361040d56273d09ea17737758f8086b0d"
       def install
         bin.install "momentum"
       end
