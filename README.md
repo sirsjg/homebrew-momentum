@@ -4,4 +4,5 @@ Install Momentum via Homebrew:
 
 ```bash
 brew tap sirsjg/momentum
-brew install momentum
+brew install --cask momentum
+```

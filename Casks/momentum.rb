@@ -35,5 +35,4 @@ cask "momentum" do
   binary "momentum"
 
   # No zap stanza required
-
 end
